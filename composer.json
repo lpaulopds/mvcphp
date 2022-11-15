@@ -1,0 +1,24 @@
+{
+    "name": "wdev/mvc",
+    "description":"Projeto MVC em PHP do canal WDEV no YouTube. 2022",
+    "minimun-stability":"stable",
+    "license":"MIT",
+    "keywords": [
+        "php",
+        "mvc",
+        "api",
+        "jwt",
+        "cookies",
+        "crud"
+    ],
+    "autoload":{
+        "psr-4":{
+            "App\\":"app/"
+        }
+    },
+    "require": {
+        "william-costa/dot-env": "^0.1.0",
+        "william-costa/database-manager": "^0.1.0",
+        "firebase/php-jwt": "^6.3"
+    }
+}

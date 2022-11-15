@@ -1,0 +1,12 @@
+# Liga o rewrite
+RewriteEngine on
+
+# Regra de rewrite: tudo para o index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ./index.php [QSA,NC]
+
+# Bloqueia requisição URL para arquivo
+<Files dtEnv.ini>
+    Order allow, deny
+    Deny from all
+</Files>
